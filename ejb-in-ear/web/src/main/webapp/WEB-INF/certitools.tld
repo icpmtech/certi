@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+        http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>Certitools Tags</description>
+    <display-name>Certitools Tag Library</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>certitools</short-name>
+    <uri>http://www.criticalsoftware.com/certitools/certitools.tld</uri>
+
+    <tag>
+        <description>Tag to Escape Value</description>
+        <name>escape</name>
+        <tag-class>com.com.criticalsoftware.certitools.presentation.tag.EscapeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Value to escape</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>String escape types.Only js for the time</description>
+            <name>type</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
