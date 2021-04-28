@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/decorators">
+
+    <excludes>
+        <pattern>/index.jsp*</pattern>
+        <pattern>/login.jsp*</pattern>
+        <pattern>/Login.action*</pattern>
+        <pattern>/license/*</pattern>
+        <pattern>/certitools/News.action?togglePublished*</pattern>
+        <pattern>/certitools/User.action?viewUserFragment*</pattern>
+        <pattern>/certitools/Company.action?viewCompanyFragment*</pattern>
+        <pattern>/plan/PlanCMOperations.action*</pattern>
+        <pattern>/plan/PlanViewTemplate.action?loadRiskAnalysisToShow*</pattern>
+        <pattern>/plan/PlanCMPermissions.action?findPermissionUsages*</pattern>
+        <pattern>/plan/PlanCMTemplatesDocx.action?viewTemplateDocxFragment*</pattern>
+        <pattern>*viewTemplateFragment*</pattern>
+        <pattern>/mobile.jsp*</pattern>
+        <pattern>/monitor.jsp*</pattern>
+        <pattern>/monitor.jsp*</pattern>
+        <pattern>/Home.action?viewClients*</pattern>
+        <pattern>/sm/SecurityEmergency.action?emergencyActionChat*</pattern>
+        <pattern>/sm/SecurityMaintenance.action?maintenanceChat*</pattern>
+        <pattern>/sm/SecurityActionsPlanning.action?actionsPlanningChat*</pattern>
+        <pattern>/sm/SecurityAnomaliesRecord.action?anomaliesRecordChat*</pattern>
+        <pattern>/sm/SecurityImpactWork.action?modificationsChangesChat*</pattern>
+        <pattern>/sm/Security.action?activityPlanningChat*</pattern>
+        <pattern>/sm/Security.action?smExportForm*</pattern>
+        <pattern>/sm/Security.action?smDeleteForm*</pattern>
+    </excludes>
+
+    <decorator name="help" page="helpDecorator.jsp">
+        <pattern>*/Help.action*</pattern>
+    </decorator>
+
+    <decorator name="home" page="homeDecorator.jsp">
+        <pattern>/Home.action</pattern>
+        <pattern>/home.jsp</pattern>
+    </decorator>
+
+    <decorator name="openPages" page="openPagesDecorator.jsp">
+        <pattern>/LegislationPublic.action</pattern>
+        <pattern>/legislationPublic.jsp</pattern>
+        <pattern>/Contacts.action</pattern>
+        <pattern>/contatcs.jsp</pattern>
+        <pattern>/News.action</pattern>
+        <pattern>/homeNews.jsp</pattern>
+        <pattern>/WhatItIs.action</pattern>
+        <pattern>/whatItIs.jsp</pattern>
+        <pattern>/PlansPublic.action</pattern>
+        <pattern>/HowItWorks.action</pattern>
+        <pattern>/howItWorks.jsp</pattern>
+        <pattern>/WEB-INF/applicationLicenseError.jsp</pattern>
+        <pattern>/WEB-INF/errorMain.jsp</pattern>
+        <pattern>/UserActivation.action*</pattern>
+        <pattern>/UserRegister.action*</pattern>
+    </decorator>
+
+    <decorator name="main" page="mainDecorator.jsp">
+        <pattern>/*.action</pattern>
+        <pattern>/*.jsp</pattern>
+    </decorator>
+</decorators>
