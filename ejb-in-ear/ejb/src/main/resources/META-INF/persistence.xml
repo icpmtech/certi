@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    <persistence-unit name="certitoolsEntityManager" transaction-type="JTA">
+        <jta-data-source>java:/CertiToolsDS</jta-data-source>
+
+        <class>com.com.criticalsoftware.certitools.entities.User</class>
+        <class>com.com.criticalsoftware.certitools.entities.Role</class>
+        <class>com.com.criticalsoftware.certitools.entities.Configuration</class>
+        <class>com.com.criticalsoftware.certitools.entities.Company</class>
+        <class>com.com.criticalsoftware.certitools.entities.Contract</class>
+        <class>com.com.criticalsoftware.certitools.entities.Module</class>
+        <class>com.com.criticalsoftware.certitools.entities.FAQ</class>
+        <class>com.com.criticalsoftware.certitools.entities.News</class>
+        <class>com.com.criticalsoftware.certitools.entities.NewsCategory</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocument</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocumentCategory</class>
+        <class>com.com.criticalsoftware.certitools.entities.SearchStatistic</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocumentHistory</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocumentType</class>
+        <class>com.com.criticalsoftware.certitools.entities.License</class>
+        <class>com.com.criticalsoftware.certitools.entities.FAQCategory</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocumentType</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocumentState</class>
+        <class>com.com.criticalsoftware.certitools.entities.LegalDocumentStatistics</class>
+        <class>com.com.criticalsoftware.certitools.entities.Country</class>
+        <class>com.com.criticalsoftware.certitools.entities.UserContractPK</class>
+        <class>com.com.criticalsoftware.certitools.entities.UserContract</class>
+        <class>com.com.criticalsoftware.certitools.entities.Permission</class>
+        <class>com.com.criticalsoftware.certitools.entities.HelpSearchableContent</class>
+        <class>com.com.criticalsoftware.certitools.entities.TemplateDocx</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Activity</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.ActivityType</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Anomaly</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Chat</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.CodeSequence</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.CorrectiveAction</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Document</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.EmergencyAction</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.EmergencyToken</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.EmergencyUser</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Equipment</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Maintenance</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.MaintenanceType</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Recurrence</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.RecurrenceNotification</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.RecurrenceType</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.Risk</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.SecurityImpact</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.SecurityImpactWork</class>
+        <class>com.com.criticalsoftware.certitools.entities.sm.SubModule</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.cache.use_query_cache" value="false"/>
+
+            <!--Comment the following properties in order do disable JBoss Cache -->
+            <!--property name="hibernate.cache.provider_class" value="org.jboss.ejb3.entity.TreeCacheProviderHook" /-->
+            <!--property name="hibernate.treecache.mbean.object_name" value="jboss.cache:service=EJB3EntityTreeCache" /-->
+
+            <!--Uncomment the following properties in order to disable JBoss Cache -->
+            <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+            <property name="hibernate.cache.use_second_level_cache" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>

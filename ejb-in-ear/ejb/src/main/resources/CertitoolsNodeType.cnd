@@ -1,0 +1,10 @@
+<nt = 'http://www.jcp.org/jcr/nt/1.0'>
+<certitools = 'http://www.certitools.com/jcr/certitools/'>
+
+[certitools:document] > nt:resource
+- jcr:fullDrTitle mandatory
+- jcr:customTitle mandatory
+- jcr:summary mandatory
+- jcr:publish mandatory 
+- jcr:keywords
+- jcr:customAbstract

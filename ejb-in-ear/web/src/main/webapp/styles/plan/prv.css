@@ -1,0 +1,44 @@
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:	    #C00000;
+}
+
+.sf-menu a{
+    background-color: #C00000;
+    color: #fff;
+}
+
+.sf-menu li li a{
+    background-color: #E99D93;
+    color: #fff;
+
+    border-left: 1px solid #C00000; /* certitools changed */
+    border-right: 1px solid #C00000; /* certitools changed */
+}
+
+.sf-menu li li.sfHover, .sf-menu li li a:hover{
+    background-color: #C00000;
+    color: #fff;
+}
+
+.sf-menu li.sfHover, .sf-menu a:hover, a.selectedSection{
+    background-color: #E99D93;
+    color: #FFF;
+}
+
+
+.peiMenu{
+    background-color: #C00000;
+}
+
+
+/* Plan management */
+
+#operationsPlanCMResize {
+    border: 1px solid #C00000; /*background-color: #C00000;*/
+}
+
+/* Override gradient in planMain */
+.section .label {
+    background: #C00000 url('../../images/grad-prvmain.png') repeat-y;
+}

@@ -1,0 +1,461 @@
+.securityMenu {
+    height: 54px;
+    width: 963px;
+    margin-top: 10px;
+    margin-bottom: 12px; /* ie fix */
+}
+
+.securityMenu .sf-menu li {
+    width: 160.5px;
+}
+
+.securityMenu .sf-menu li .firstLevelMenuItem {
+    height: 3em;
+}
+
+.securityMenu .openItemsIndicator {
+    position: absolute;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #cc3333;
+    display: block;
+    right: 2px;
+    bottom: 3px;
+    line-height: 16px
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+    top: 4.5em;
+}
+
+.securityMenu .disabledFirstLevelMenuItem {
+    display: block;
+    padding: .75em 0.5em;
+    height: 3em;
+    color: #fff;
+    background-color: #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+}
+
+.securityMenu .selectedSection.disabledFirstLevelMenuItem {
+    background-color: #628FAE;
+}
+
+.securityHeader .imageContainer,
+.securityFrontOffice .imageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.securityHeader .imageContainer {
+    min-width: 70px; /*show the button even when the image is small or does not exists*/
+    height: 70px;
+}
+
+.securityFrontOffice .imageContainer {
+    width: 650px; /*show the button even when the image is small or does not exists*/
+    height: 500px;
+}
+
+.securityHeader .companyLogo {
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 8px;
+    padding-top: 5px;
+}
+
+.securityHeader .companyLogo img {
+    max-height: 70px;
+}
+
+.securityHeader .imageContainer #changeLogoPictureForm,
+.securityFrontOffice .imageContainer #changeCoverPictureForm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    display: none;
+}
+
+.securityHeader .companyLogo:hover #changeLogoPictureForm,
+.securityFrontOffice .imagePanel:hover #changeCoverPictureForm {
+    display: inline-block; /*do not get hover action from imageContainer because image might have no width*/
+}
+
+.securityHeader #changeLogoPictureForm #changeLogoPictureFormInput,
+.securityFrontOffice #changeCoverPictureForm #changeCoverPictureFormInput,
+.securityHeader #changeLogoPictureForm #changeLogoPictureFormButton,
+.securityFrontOffice #changeCoverPictureForm #changeCoverPictureFormButton {
+    width: 100px;
+    height: 24px;
+    margin-left: 0px;
+}
+
+.securityFrontOffice .infoPanel {
+    float: left; /* ie fix */
+    vertical-align: top;
+    display: inline-block;
+    width: 238px;
+    padding: 15px;
+    border: 1px solid #999999;
+    background-color: #F0F0F0;
+}
+
+.securityFrontOffice .infoPanel #frontOfficeDatepicker {
+    margin-bottom: 20px;
+}
+
+.securityFrontOffice .infoPanel #frontOfficeDatepicker .ui-datepicker {
+    width: 230px;
+}
+
+.securityFrontOffice .infoPanel .eventContainer {
+    display: block;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #628FAE;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.securityFrontOffice .infoPanel .eventContainer p {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.securityFrontOffice .imagePanel {
+    vertical-align: top;
+    display: inline-block;
+    width: 696px;
+    text-align: center;
+}
+
+.securityFrontOffice .imagePanel img {
+    max-width: 650px;
+    max-height: 500px;
+}
+
+.securityContent .displaytag ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.securityContent .displaytag ul li {
+    margin: 5px;
+}
+
+.securityContent .displaytag ul li a {
+    white-space: nowrap;
+}
+
+.securityContent .leftSideContent {
+    width: 555px !important;
+    display: inline-block;
+}
+
+.securityContent .rightSideContent {
+    float: right;
+    display: inline-block;
+    width: 350px;
+}
+
+.securityContent .rightSideContent .chatContainer {
+    height: 370px;
+    border: 1px solid #999999;
+}
+
+.securityContent #successShade,
+.securityContent #errorShade {
+    width: 100%;
+}
+
+.securityContent .workAthorizationPrint {
+    float: right;
+    margin-top: 20px !important;
+    padding: 2px 10px 2px 25px !important;
+}
+
+.securityContent .spaceField {
+    margin-bottom: 10px;
+}
+
+.securityContent input[type="file"].workAttachments {
+    margin-left: 200px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.securityContent .documentsLabel {
+    height: 1px; /* allow elements with margin-left to be at the same height as this label */
+}
+
+.securityContent label.workAttachments {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 10px;
+    width: 130px;
+}
+
+.securityContent input[type="text"].workAttachments {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 200px;
+}
+
+.securityChat {
+    position: relative;
+    height: 100%;
+    text-align: left;
+    background-color: #F0F0F0;
+}
+
+.popout-chat {
+    margin: 0;
+    height: 100%;
+}
+
+.securityChat .chatHeader {
+    height: 45px;
+}
+
+.securityChat .chatHeader span {
+    display: inline-block;
+    margin: 15px;
+}
+
+.securityChat .chatContent {
+    position: absolute;
+    top: 45px;
+    bottom: 100px;
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.securityChat .chatContent ul {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 15px;
+    background-color: white;
+    border: 1px solid #999999;
+    list-style-type: none;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.securityChat .chatContent ul li {
+    display: inline-block;
+    width: 100%;
+    text-align: right; /* ie fix - float right does not work well */
+}
+
+.securityChat .chatContent ul li .messageInfo {
+    float: left; /* ie fix */
+    color: #2772B6;
+}
+
+.securityChat .chatFooter {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.securityChat .chatFooter .chatFooterContainer {
+    margin: 10px 15px 15px 15px;
+}
+
+.securityChat .chatFooter textarea {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.securityChat .chatFooter #popoutButton {
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.securityChat .chatFooter .chatButtonsContainer {
+    margin-top: 5px;
+    height: 25px;
+    text-align: right; /* ie fix - float right for the send button does not work */
+}
+
+.securityChat .chatFooter input:disabled {
+    background-color: #6992B8;
+}
+
+.securityActionsList {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+}
+
+.securityActionsList ul {
+    background-color: white;
+    border: 1px solid #999999;
+    list-style-type: none;
+    padding: 5px;
+    width: 308px;
+    height: 100px;
+    overflow-y: scroll;
+    margin-left: 0px; /* ie fix */
+}
+
+.securityActionsList ul li {
+    display: inline-block;
+    width: 100%
+}
+
+.securityActionDate {
+    float: left; /* ie fix */
+}
+
+.securityActionResponsible {
+    float: left; /* ie fix */
+    margin-left: 5px;
+}
+
+.securityActionsListCode {
+    float: right;
+}
+
+/******************
+ *
+ *****************/
+
+.multiselect {
+    width: 342px;
+    padding-left: 200px;
+}
+
+#selectBox {
+    position: relative;
+
+}
+
+#selectBox select {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 0;
+    border: 1px solid #7F7F7F;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    position: absolute;
+    background-color: white;
+    width: 340px;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+
+}
+
+#checkboxes label {
+    display: block;
+    width: 100%;
+}
+
+#checkboxes input {
+    margin-bottom: 0px; /* ie fix */
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+.selectType,
+.selectRecurrence,
+.selectSecurityImpact,
+.securityImpact {
+    float: none;
+    padding: 2px;
+    width: 340px;
+    border: 1px solid #7F7F7F;
+}
+
+.checkList {
+    color: #000 !important;
+}
+
+.checkList:hover {
+    color: #FFF !important;
+}
+
+.attachments {
+    margin-top: 10px;
+}
+
+.attachmentsPosition {
+    display: inherit;
+}
+
+.fileList {
+    /*float: right;*/
+    list-style-type: none;
+    margin-left: 200px;
+}
+
+.fileList .download-file {
+    float: left; /* ie fix */
+    width: 230px;
+}
+
+ul.fileList {
+    padding: 0 !important;
+    margin-top: 0;
+    width: 300px;
+}
+
+ul.fileList li {
+    padding-bottom: 10px;
+}
+
+.deleteIcon {
+    float: right;
+    position: static;
+}
+
+/* label[for="code"] does not work in ie */
+.securityContent .addPaddingBottom {
+    padding-bottom: 15px;
+}
+
+.securityContent #description,
+.securityContent #notes {
+    padding-left: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.securityContent .ui-datepicker-trigger {
+    vertical-align: top; /* ie fix */
+}
+
+.securityContent .alignBottom {
+    vertical-align: bottom;
+}

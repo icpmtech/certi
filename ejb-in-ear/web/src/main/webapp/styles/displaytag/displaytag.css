@@ -1,0 +1,180 @@
+table.displaytag {
+    color: #000000;
+    border: 1px solid #37576C;;
+    width: 100%;
+    margin: 5px 0 10px 0 !important;
+    font-size: 0.9em;
+}
+
+table.displaytag th {
+    text-align: left;
+    vertical-align: top;
+    padding: 4px 3px 4px 10px !important;
+}
+
+table.displaytag td {
+    padding: 2px 4px 2px 4px !important;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.displaytag td.center {
+    text-align: center;
+}
+
+table.displaytag thead tr {
+    background-color: #37576C;
+}
+
+table.displaytag th.sorted {
+    background-color: #3394CF;
+}
+
+table.displaytag th,
+table.displaytag th a,
+table.displaytag th a:visited {
+    color: #ffffff;
+}
+
+table.displaytag th a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+table.displaytag th.sorted a,
+table.displaytag  th.sortable a {
+    background-position: right;
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+table.displaytag  th.sortable a {
+    background: url( ../../images/displaytag/arrow_off.png ) no-repeat right;
+
+}
+
+table.displaytag  th.order1 a {
+    background: url( ../../images/displaytag/arrow_down.png ) no-repeat;
+    background-position: right;
+}
+
+table.displaytag  th.order2 a {
+    background: url( ../../images/displaytag/arrow_up.png ) no-repeat;
+    background-position: right;
+}
+
+table.displaytag  tr.odd {
+    background-color: #fff
+}
+
+table.displaytag  td.number {
+    text-align: right;
+}
+
+table.displaytag  tr.tableRowEven, table.displaytag  tr.even {
+    background-color: #DFEAFF;
+}
+
+div.exportlinks {
+    font-size: 0.8em;
+    padding: 2px 4px 2px 4px;
+    margin: 2px 0 10px 0;
+    width: 99%;
+    border: 1px solid #37576C;
+}
+
+span.export {
+    padding: 0 4px 1px 20px;
+    display: inline;
+    display: inline-block;
+    cursor: pointer;
+}
+
+span.excel {
+    background: url( ../../images/displaytag/ico_file_excel.png ) no-repeat;
+}
+
+span.csv {
+    background: url( ../../images/displaytag/ico_file_csv.png ) no-repeat;
+}
+
+span.csv2 {
+    background: url( ../../images/displaytag/ico_file_csv_2.png ) no-repeat;
+}
+
+span.xml {
+    background: url( ../../images/displaytag/ico_file_xml.png ) no-repeat;
+}
+
+span.pdf {
+    background: url( ../../images/displaytag/ico_file_pdf.png ) no-repeat;
+}
+
+span.rtf {
+    background: url( ../../images/displaytag/ico_file_rtf.png ) no-repeat;
+}
+
+span.pagebanner {
+    font-size: 0.8em;
+    padding: 2px 4px 2px 4px;
+    width: 99%;
+    margin-top: 10px;
+    display: block;
+    border-top: 1px solid #37576C;
+    border-left: 1px solid #37576C;
+    border-right: 1px solid #37576C;
+
+}
+
+span.pagelinks {
+    font-size: 0.8em;
+    padding: 2px 4px 2px 4px;
+    width: 99%;
+    display: block;
+    border-top: none;
+    margin-bottom: -5px;
+    border-bottom: 1px solid #37576C;
+    border-left: 1px solid #37576C;
+    border-right: 1px solid #37576C;
+}
+
+.group-1 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-top: 1px solid #2772B6;
+}
+
+.group-2 {
+    font-style: italic;
+    border-top: 1px solid #2772B6;
+
+}
+
+.subtotal-sum, .grandtotal-sum {
+    font-weight: bold;
+    text-align: right;
+}
+
+.subtotal-header {
+    padding-bottom: 0px;
+    border-top: 1px solid white;
+}
+
+.subtotal-label, .grandtotal-label {
+    border-top: 1px solid white;
+    font-weight: bold;
+}
+
+.grouped-table tr.even {
+    background-color: #fff;
+}
+
+.grouped-table tr.odd {
+    background-color: #fff;
+}
+
+.grandtotal-row {
+    border-top: 2px solid white;
+}
